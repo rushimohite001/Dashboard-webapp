@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/Task 11/Styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="logo">Logo</div>
+            <ul class="nav">
+                <li class="nav-item active"><a href="#">Dashboard</a></li>
+                <li class="nav-item"><a href="#">Order</a></li>
+                <li class="nav-item"><a href="#">Products</a></li>
+                <li class="nav-item"><a href="#">Customers</a></li>
+                <li class="nav-item"><a href="#">Messages</a></li>
+                <li class="nav-item"><a href="#">Stock</a></li>
+                <li class="nav-item"><a href="#">Settings</a></li>
+                <li class="nav-item"><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <h1>Dashboard</h1>
+            </header>
+            <section class="content">
+                <div class="card">
+                    <h2>Today's Sales</h2>
+                    <p>Total Orders: 10850</p>
+                    <p>Products Sold: 120</p>
+                    <p>New Customers: 30</p>
+                </div>
+                <div class="card">
+                    <h2>Total Revenue</h2>
+                    <canvas id="revenueChart"></canvas>
+                </div>
+                <div class="card">
+                    <h2>Chart Order</h2>
+                    <canvas id="orderChart"></canvas>
+                </div>
+                <div class="card">
+                    <h2>Pie Chart</h2>
+                    <canvas id="pieChart"></canvas>
+                </div>
+                <div class="card">
+                    <h2>Top Products</h2>
+                    <canvas id="productsChart"></canvas>
+                </div>
+                <div class="card">
+                    <h2>Target vs Reality</h2>
+                    <canvas id="targetChart"></canvas>
+                </div>
+                <div class="card">
+                    <h2>Customer Satisfaction</h2>
+                    <canvas id="satisfactionChart"></canvas>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/Task 11/Scripts/scripts.js"></script>
+</body>
+</html>
